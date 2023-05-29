@@ -1,0 +1,32 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sph_vis_tools"
+version = "0.0.0"
+description = "Convenient tools for plotting easily with SPH and synthetic image data. Makes use of more general tools made by cleverer people.."
+readme = "README.md"
+authors = [{ name = "Thomas Hilder", email = "Thomas.Hilder@monash.edu" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Topic :: Scientific/Engineering :: Physics"
+]
+keywords = ["astronomy", "astrophysics", "research", "visualisation", "hydrodynamics"]
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "scipy",
+    "sarracen",
+    "setuptools"
+]
+requires-python = ">=3.6"
+
+[project.urls]
+Homepage = "https://github.com/TomHilder/sph_vis_tools"
