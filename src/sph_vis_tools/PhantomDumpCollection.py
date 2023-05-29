@@ -45,14 +45,14 @@ class PhantomDumpCollection:
     def make_grids(
         self,
         quantities: list[str],
-        xlim: Tuple[float,float],
-        ylim: Tuple[float,float],
-        zlim: Tuple[float,float],
-    ):
+        xlim: Tuple[float, float],
+        ylim: Tuple[float, float],
+        zlim: Tuple[float, float],
+    ) -> None:
         """
         Convert Phantom Dump files into Numpy arrays of gridded data, by interpolating
         over user specified bounds with Sarracen.
-        
+
         Parameters
         ----------
         quantities : list[str]
@@ -67,7 +67,20 @@ class PhantomDumpCollection:
         pass
 
     # convert desired data to arrays using Sarracen
-    def convert_to_arr(file: Path) -> None:
+    @staticmethod
+    def convert_to_arr(
+        file: str,
+        quantities: list[str],
+        xlim: Tuple[float, float],
+        ylim: Tuple[float, float],
+        zlim: Tuple[float, float],
+    ) -> np.ndarray[float]:
+        # loop over quantities
+
+        # read quantity into numpy array with Sarracen
+        # concatenate arrays
+
+        # return array
         pass
 
     # collect files in path using Path objects
