@@ -1,3 +1,9 @@
+# custom
+*.ipynb
+*.npy
+hd169_01000
+*.hdf
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
